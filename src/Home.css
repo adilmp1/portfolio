@@ -1,0 +1,162 @@
+.home
+{
+    padding: 30px;
+    display: flex;
+    /* position: relative; */
+    animation: transitionIn 0.75s;
+}
+img
+{
+    padding-left: 100px;
+    transition: all 0.6s ease-in-out;
+}
+
+.home-content
+{
+    padding: 30px;
+}
+img:hover
+{
+    transform: scale(1.02);
+    transition: all 0.6s ease-in-out;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-content h1
+{
+    font-size: 4rem;
+    max-width: 80%;
+}
+
+.home-content p{
+    font-size: var(--text-size);
+    max-width: 60vh;
+}
+
+@keyframes transitionIn
+{
+  from
+  {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to 
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-content button 
+{
+    width: 15vh;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    font-size: 19px;
+    font-weight: bolder;
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+    border: 3px solid;
+}
+i{
+    transition: all 0s ease-in-out;
+}
+button:hover
+{
+    cursor: pointer;
+    background:rgb(231, 236, 237);
+    color: black;
+}
+
+
+@media (max-width:1600px)
+{
+    .home-content h1{
+        font-size: 3.5rem;
+    }
+}
+@media (max-width:1500px)
+{
+    .home-content h1{
+        font-size: 3rem;
+    }
+}
+@media (max-width:1400px)
+{
+    .home-content h1{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width:1300px)
+{
+    .home-content h1{
+        width: 100%;
+    }
+}
+@media (max-width:1129px)
+{
+    .home
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-content
+    {
+        align-items: center;
+        width: auto;
+    }
+    
+    img{
+        padding-left: 0px;
+    }
+    .home-content
+    {
+        margin-left: 30px;
+    }
+}
+@media (max-width:760px)
+{
+    .home
+    {
+        padding: 0;
+    }
+    img{
+        /* display: none; */
+        width: auto;
+        /* height: auto; */
+        margin-left: 30px;
+        
+    }
+    .home-content h1
+    {
+        display: none;
+    }
+    
+    .home-content
+    {
+        align-items:flex-start;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width:675px)
+{
+    img{
+        width: 80%;
+        margin-left: 50px;
+    }
+
+}
+
+.home-content p{
+    max-width: 100%;
+    display: inline-flex;
+}
