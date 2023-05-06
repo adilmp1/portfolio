@@ -5,21 +5,27 @@ import Contact from './Contact';
 import About from './About';
 import Skills from './Skills';
 import { useState } from 'react';
-import { getByDisplayValue } from '@testing-library/react';
 function App() {
-  const [dark,setDark] = useState('ri-moon-line');
-  // const [left,setLeft] = useState('-200px')
+  const [menu,setMenu] = useState('ri-menu-line');
   const [style,setStyle] = useState({marginLeft:'-200px'})
   const navBarMoveMent = () =>{
     let navbar = document.querySelector('.navbar')
     navbar.classList.toggle('navMove')
+    if(menu==='ri-menu-line')
+    {
+      setMenu('ri-close-fill')
+    }
+    else
+    {
+      setMenu('ri-menu-line')
+    }
   }
   return (
     <div className="App">
       <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet"/>
       <Router>
           <header>
-            <div onClick={()=>navBarMoveMent()} className='menu'><i class="ri-menu-line"></i></div>
+            <div onClick={()=>navBarMoveMent()} className='menu'><i class={menu}></i></div>
             <ul className='navbar navMove'>
                 <Link to="/"><li onClick={()=>navBarMoveMent()} className='nav'>Home</li></Link>
                 <Link to="/about"><li onClick={()=>navBarMoveMent()} className='nav'>About</li></Link>

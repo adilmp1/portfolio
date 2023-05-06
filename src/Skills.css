@@ -1,0 +1,49 @@
+.skills
+{
+    animation: transitionIn 0.75s;
+}
+.skills h1{
+    text-align: center;
+}
+.my-skills{
+    display: flex;
+    padding: 50px 100px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.my-skills .skill img{
+    width:200px;
+    align-self: center;
+    transform: translate(-25%);
+}
+
+.skill{
+    animation: animate 0.8s ease-in-out 0s 1 normal none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@keyframes animate 
+{
+    from 
+    {
+        opacity: 0;
+    }   
+    to 
+    {
+        opacity: 1;
+    } 
+}
+
+@media (max-width:1129px)
+{
+    .skills h1{
+        margin-top: 0px;
+        line-height: 110px;
+    }
+    .menu{
+        position: absolute;
+    }
+}

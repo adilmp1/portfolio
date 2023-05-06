@@ -1,0 +1,120 @@
+.contact{
+    /* border: 2px solid; */
+    animation: transitionIn 0.75s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 10%;
+}
+
+.left-right
+{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid; */
+    width: 100%;
+}
+
+.left-side
+{
+    /* border: 2px solid violet; */
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+}
+
+.right-side
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.contact h1{
+    text-align: center;
+}
+
+.contact-me{
+    /* border: 2px solid red; */
+    /* width: fit-content; */
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    padding: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    background:rgb(185, 190, 191);
+    border-radius: 5px;
+}
+.call{
+    margin-right: 10%;
+    /* border: 2px solid red; */
+    padding: 10px;
+    background:rgb(231, 236, 237);    
+    border-radius: 50%;
+}
+.my-mail
+{
+    /* border: 2px solid red; */
+    padding: 10px 30px;
+    background:rgb(231, 236, 237);    
+    border-radius: 10px;
+    /* width: 100%; */
+}
+
+.call:hover, .my-mail:hover{
+    transform: scale(1.05);
+    background:rgb(248, 254, 255);    
+    cursor: pointer;
+}
+
+.your-name{
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    padding: 0px 10px;
+    font-size: 18px;
+}
+.your-message{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 18px;
+}
+input[type='submit']
+{
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+}
+input[type='submit']:hover
+{
+    cursor: pointer;
+    background:rgb(225, 250, 255);    
+}
+
+@media (max-width:1129px)
+{
+    .left-right {
+        flex-direction: column;
+    }
+    .left-side {
+        width: 100%;
+    }
+    .right-side {
+        width: 100%;
+    }
+}
+@media (max-width:543px)
+{
+    .my-mail{
+        text-overflow: hidden;
+    }
+    .contact-me {
+        min-width: 400px;
+    }
+    input,textarea {
+        min-width: 400px;
+    }
+}

@@ -1,0 +1,19 @@
+/* .about{
+    height: 80vh;
+    display: flex;
+    width: 100%;
+    font-size: larger;
+    border: 2px solid;
+    align-items: center;
+}
+
+.about-content
+{
+    border: 2px solid;
+    width: 40%;
+    margin: 50px 60px;  
+} */
+
+.about h1{
+    text-align: center;
+}
