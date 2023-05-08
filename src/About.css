@@ -1,19 +1,111 @@
-/* .about{
-    height: 80vh;
-    display: flex;
+.about{
     width: 100%;
-    font-size: larger;
-    border: 2px solid;
+    display: flex;
+    justify-content: center;
+}
+.about-content-photo{
+    width: 70%;
+    /* border: 2px solid; */
+    display: flex;
+    animation: transitionIn 0.75s;
+    padding: 50px 100px;
+}
+.about-photo img {
+    /* width: ; */
+    /* border: 2px solid; */
     align-items: center;
+    /* border-radius: 50%; */
+    width: 650px;
+    display: none;
 }
 
-.about-content
-{
-    border: 2px solid;
-    width: 40%;
-    margin: 50px 60px;  
-} */
+.about-content{
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    border-radius: 13px;
+    opacity: 0.4;
+    color: rgb(254, 255, 250);
+    padding-bottom: 30px;
+}
 
-.about h1{
+
+.about-content h1{
     text-align: center;
+}
+.about-content hr{
+    width: 300px;
+}
+
+.about-content p{
+    max-width: 70%;
+    font-size: larger;
+    word-spacing: 6px;
+    letter-spacing: 0.5px;
+}
+
+.my-details{
+    display: flex;
+    /* border: 2px solid red; */
+    width: 70%;
+    justify-content: space-between;
+    font-size: larger;
+    margin-top: 15px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    overflow-wrap: break-word;
+}
+
+.my-details .part-1{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+footer {
+	background-color: #f5f5f5;
+	color: #333;
+	padding: 20px;
+	text-align: center;
+}
+
+@media (max-width:1600px)
+{
+    .my-details .part-1{
+        flex-direction: column;
+    }
+}
+@media (max-width:1129px)
+{
+    .about-photo img{
+        display: none;
+    }
+    
+    .my-details .part-1{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:1000px)
+{
+    
+    .my-details{
+        flex-direction: column;
+    }
+
+    .about-content-photo{
+        width: 100%;
+        padding: 50px 50px;
+    }
+    .about-content p{
+        max-width: 70%;
+        font-size: normal;
+        word-spacing: normal;
+        letter-spacing: normal;
+    }
+
 }

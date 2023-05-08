@@ -8,6 +8,7 @@
 img
 {
     padding-left: 100px;
+    width: 500px;
     transition: all 0.6s ease-in-out;
 }
 
@@ -54,7 +55,7 @@ img:hover
 
 .home-content button 
 {
-    width: 15vh;
+    width: fit-content;
     height: 5vh;
     background-color: black;
     color: white;
@@ -63,6 +64,7 @@ img:hover
     border-radius: 10px;
     letter-spacing: 0.5px;
     border: 3px solid;
+    padding: 0px 10px;
 }
 i{
     transition: all 0s ease-in-out;

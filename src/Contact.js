@@ -27,7 +27,7 @@ export default function Contact()
                         <div className='my-mail'>7592063720</div>
                     </div>
                     <div className='contact-me'>
-                        <div className='call'><i class="ri-mail-fill"></i></div>
+                        <div className='mail-icon call'><i class="ri-mail-fill"></i></div>
                         <div className='my-mail'>adilmohamedmp1@gmail.com</div>
                     </div>
                     <div className='contact-me'>

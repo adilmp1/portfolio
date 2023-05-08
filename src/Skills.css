@@ -1,16 +1,26 @@
 .skills
 {
     animation: transitionIn 0.75s;
+    /* border: 2px solid; */
+}
+.my-skills-container
+{
+    border: 2px solid;
+    /* display: flex;
+    width: 100%;
+    justify-content: center; */
 }
 .skills h1{
     text-align: center;
 }
 .my-skills{
     display: flex;
+    justify-content: center;
     padding: 50px 100px;
     margin-top: 40px;
     flex-wrap: wrap;
-    gap: 30px;
+    column-gap: 30px;
+    row-gap: 50px;
 }
 .my-skills .skill img{
     width:200px;
